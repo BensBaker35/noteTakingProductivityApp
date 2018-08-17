@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.fxml.NoteCreatorFXMLController">
+   <children>
+      <Group fx:id="noteGroup" layoutX="285.0" layoutY="40.0">
+         <children>
+            <JFXTextField fx:id="input_sectionName" layoutX="28.0" promptText="Course Name" />
+            <JFXTextField fx:id="input_UnitNumber" layoutX="27.0" layoutY="36.0" promptText="Unit Number" />
+            <JFXListView fx:id="listView_CourseWorkType" layoutY="67.0" prefHeight="357.0" prefWidth="200.0" snapToPixel="false" />
+            <JFXButton fx:id="submitButton" layoutX="74.0" layoutY="446.0" onMouseClicked="#createNewNote" text="Create" />
+            <JFXDatePicker fx:id="dayPicker" layoutX="15.0" layoutY="423.0" promptText="Pick Day" />
+         </children>
+      </Group>
+   </children>
+</Pane>

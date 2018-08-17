@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.fxml.CourseHomeController">
+   <children>
+      <SplitPane fx:id="courseSplitPane" dividerPositions="0.29797979797979796" layoutX="-1.0" layoutY="57.0" prefHeight="343.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="15.0" text="Work" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="96.0" AnchorPane.topAnchor="15.0" />
+                  <JFXListView fx:id="workList" layoutX="2.0" layoutY="34.0" prefHeight="311.0" prefWidth="175.0" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <JFXButton fx:id="newNote1" layoutX="95.0" layoutY="11.0" onMouseClicked="#createNewCourseWork" text="New Work" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="233.0" prefWidth="222.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="195.0" layoutY="14.0" text="Notes" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="14.0" />
+                  <JFXListView fx:id="noteList" layoutY="34.0" prefHeight="311.0" prefWidth="417.0" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <JFXButton fx:id="newNote" layoutX="357.0" layoutY="10.0" onMouseClicked="#createNewNote" text="New Note" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <AnchorPane layoutX="5.0" layoutY="6.0">
+         <children>
+            <Label fx:id="classNameLabel" layoutX="286.0" text="Class" AnchorPane.leftAnchor="286.0" AnchorPane.rightAnchor="287.0" />
+            <Label fx:id="classInfoLabel" alignment="CENTER" layoutY="17.0" prefHeight="34.0" prefWidth="600.0" text="Class Info" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

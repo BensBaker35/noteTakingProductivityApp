@@ -1,0 +1,14 @@
+package application.Java;
+
+public enum CourseType {
+	PE,
+	MATH,
+	SCIENCE,
+	SOCIALSTUDIES,
+	BUSINESS,
+	ART,
+	MUSIC,
+	FORIEGNLANGUAGE,
+	ENGINEERING,
+	LANGUAGEARTS
+}
